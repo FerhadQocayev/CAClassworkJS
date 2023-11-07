@@ -25,6 +25,26 @@ const users = [
   },
 ];
 
-let newUsers = users.map((item) => `${item.first_name} ${item.last_name}`);
+let newUsers = users.map((item, i) => {
+  return `${item.first_name} ${item.last_name}`;
+});
 
 console.log(newUsers);
+
+// task 3
+
+const persons = [
+  { name: "Akif", age: 25 },
+  { name: "Aysu", age: 32 },
+  { name: "Ali", age: 35 },
+];
+
+// let firstPerson = persons.find((item, i) => {
+//     return item.age > 30
+// })
+// console.log(firstPerson);
+
+let firstPerson = persons.find((item, i) => {
+  return item.age > 30;
+});
+console.log(firstPerson);
