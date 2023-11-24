@@ -6,17 +6,17 @@ let count = 0;
 
 addBtn.addEventListener("click", function () {
   if (input.value !== "") {
-    count++
-    
+    count++;
+
     let liElem = document.createElement("li");
     let spanElem = document.createElement("span");
     let buttonElem = document.createElement("button");
-    
+
     spanElem.innerText = input.value;
     buttonElem.innerText = "DELETE";
     input.value = "";
-    
-    liElem.append(`${count}`, spanElem, buttonElem);
+
+    liElem.append(`${count})`, spanElem, buttonElem);
     ullElem.append(liElem);
 
     buttonElem.addEventListener("click", function () {
