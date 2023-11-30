@@ -1,21 +1,21 @@
 // let keysAdada = document.querySelector(".key");
 let text = document.querySelector(".words");
 
-// window.addEventListener("keydown", function (e) {
-//   keysAdada.forEach((item, i) => {
-//     if (item.innerText == e.key) {
-//       console.log(e.key);
-//       keys.style.backgroundColor = "yellow";
-//     }
-//   });
-// });
+window.addEventListener("keydown", function (e) {
+  keysAdada.forEach((item, i) => {
+    if (item.innerText == e.key) {
+      console.log(e.key);
+      keys.style.backgroundColor = "yellow";
+    }
+  });
+});
 
-// window.addEventListener("keyup", function (e) {
-//   if (item.innerText == e.key) {
-//     console.log(e.key);
-//     keysAdada.style.backgroundColor = "darkcyan";
-//   }
-// });
+window.addEventListener("keyup", function (e) {
+  if (item.innerText == e.key) {
+    console.log(e.key);
+    keysAdada.style.backgroundColor = "darkcyan";
+  }
+});
 
 let keysAdada = document.querySelectorAll(".key");
 
