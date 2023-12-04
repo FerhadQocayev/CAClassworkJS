@@ -785,7 +785,7 @@ nameClick.addEventListener("click", () => {
   }
 });
 
-search.addEventListener("keyup", function (event) {
+search.addEventListener("input", function (event) {
   let filtered = users.filter((item) =>
     `${item.first_name} ${item.last_name} `
       .toLocaleLowerCase()

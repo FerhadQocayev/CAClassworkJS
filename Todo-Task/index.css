@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  width: 600px;
+  height: 400px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input {
+  padding: 10px;
+}
+.addbtn {
+  padding: 10px;
+  color: white;
+  background-color: blue;
+}
+.div-input {
+  background-color: white;
+  display: flex;
+  gap: 50px;
+}
+.deletebtn {
+  padding: 4px;
+  color: white;
+  background-color: red;
+}
+.span {
+  margin: 0 10px;
+}
