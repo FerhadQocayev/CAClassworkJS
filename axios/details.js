@@ -22,6 +22,7 @@ function drawCards(obj) {
             <a href="details.html?id=${obj.id}"><img src="${obj.image}" alt="..."  /></a>
             </div>
             <div class="card-body">
+            
               <h5 class="card-description ">${obj.title}</h5>
               <p class="card-price">${obj.price} $</p>
               </div>
@@ -29,6 +30,7 @@ function drawCards(obj) {
               <p class="card-desc"> <span>Description</span>: ${obj.description} $</p>
     </div>`;
 }
+
 let backBtn = document.querySelector(".back");
 backBtn.addEventListener("click", function () {
   window.history.back();

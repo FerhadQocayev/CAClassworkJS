@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script defer src="./home.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        outline: none;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      .heading h1 {
+        color: red;
+      }
+      .pages {
+        display: flex;
+        gap: 20px;
+      }
+      a {
+        color: teal;
+      }
+      .card {
+        padding: 5px;
+        border: 1px solid black;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        background-color: blanchedalmond;
+      }
+      .card-body {
+        color: blue;
+        margin: 5px 0;
+      }
+      .card-title {
+        color: red;
+        margin: 5px 0;
+      }
+      .card-author {
+        margin: 5px 0;
+      }
+      .delete {
+        color: white;
+        background-color: rgb(51, 5, 5);
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: none;
+      }
+      .edit {
+        color: white;
+        background-color: rgb(255, 136, 0);
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: none;
+      }
+      .blogs {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .search {
+        padding: 4px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>The Website Blog</h1>
+      <input type="search" class="search" placeholder="search blog here" />
+      <div class="pages">
+        <a href="home.html">Home</a><a href="newblog.html">New Blog</a>
+      </div>
+    </div>
+    <div>
+      <div class="blogs"></div>
+    </div>
+  </body>
+</html>
