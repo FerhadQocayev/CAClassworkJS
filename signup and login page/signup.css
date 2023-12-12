@@ -11,6 +11,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+body {
   background-color: burlywood;
 }
 .card {
@@ -21,7 +23,25 @@
   gap: 20px;
   background-color: chocolate;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 0 15px 15px 15px;
+}
+a {
+  color: cornsilk;
+  padding: 5px;
+  border-radius: 8px;
+  color: cornsilk;
+  background-color: chocolate;
+  border: 1px solid transparent;
+  margin: 10px;
+  font-weight: bold;
+}
+.adiv {
+  display: flex;
+}
+a:hover {
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
 }
 .card h1 {
   color: cornsilk;
@@ -32,10 +52,24 @@
   border-radius: 8px;
   color: cornsilk;
   background-color: darkgray;
-  border: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.signupBtn:hover {
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
 }
 .input {
   border-radius: 15px;
   border: none;
-  padding: 5px 8px;
+  padding: 6px 8px;
+}
+.eyeDiv {
+  position: relative;
+}
+.fa-solid {
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
 }

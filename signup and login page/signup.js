@@ -1,7 +1,19 @@
 let form = document.querySelector("form");
 let allInputs = document.querySelectorAll(".input");
-
+let pw = document.querySelector(".pw");
 let users = JSON.parse(localStorage.getItem("Users")) || [];
+
+let iElem = document.querySelector(".fa-solid");
+
+iElem.addEventListener("click", function () {
+  if (this.className === "fa-solid fa-eye-slash slash") {
+    this.className = "fa-solid fa-eye";
+    pw.type = "text";
+  } else {
+    this.className = "fa-solid fa-eye-slash slash";
+    pw.type = "password";
+  }
+});
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -13,9 +25,9 @@ form.addEventListener("submit", function (event) {
 
   if (!checkProses) {
     let userObj = {
-      userName: allInputs[0].value,
-      email: allInputs[1].value,
-      password: allInputs[2].value,
+      userName: allInputs[0].value.trim(),
+      email: allInputs[1].value.trim(),
+      password: allInputs[2].value.trim(),
       id: Date.now(),
     };
 
