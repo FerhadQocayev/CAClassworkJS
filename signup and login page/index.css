@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: burlywood;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: chocolate;
+  padding: 10px;
+  border-radius: 15px;
+}
+.card h1 {
+  color: cornsilk;
+}
+.loginBtn {
+  width: 100px;
+  padding: 5px;
+  border-radius: 8px;
+  color: cornsilk;
+  background-color: darkgray;
+  border: none;
+}
+.input {
+  border-radius: 15px;
+  border: none;
+  padding: 5px 8px;
+}
