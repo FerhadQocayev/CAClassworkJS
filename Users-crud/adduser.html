@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/adduser.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Logo</h1>
+        <ul class="ul">
+          <li>
+            <a href="./home.html">Home</a>
+          </li>
+          <li>
+            <a href="./adduser.html">Add User</a>
+          </li>
+          <li>
+            <a href="./favorite.html">Favorite</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <div id="addUser">
+      <button class="backBtn">Back</button>
+      <div class="hClass">
+        <h1>Add User</h1>
+      </div>
+
+      <form action="">
+        <div class="inputClass">
+          <div>
+            <p>First Name</p>
+            <input type="text" class="input" placeholder="First Name" />
+          </div>
+          <div>
+            <p>Last Name</p>
+            <input type="text" class="input" placeholder="Last Name" />
+          </div>
+          <div>
+            <p>Email</p>
+            <input type="email" class="input" placeholder="Email" />
+          </div>
+          <div>
+            <p>Photo</p>
+            <input type="file" class="input" />
+          </div>
+        </div>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/adduser.js"></script>
+  </body>
+</html>

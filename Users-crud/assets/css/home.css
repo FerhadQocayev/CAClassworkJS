@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 50px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+header h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+ul li a {
+  color: dimgrey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 1px solid transparent;
+  padding: 6px;
+  border-radius: 12px;
+}
+li a:hover {
+  color: black;
+  border: 1px solid white;
+}
+.section-first {
+  background-image: url(../img/bg1.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+}
+.user-list {
+  height: 90vh;
+}
+.table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text h1 {
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+table,
+td,
+th {
+  border: 0.5px solid;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+td {
+  padding: 8px;
+}
+td img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.deleteBTN,
+.favBTN,
+.editBtn {
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  height: 30px;
+  cursor: pointer;
+}
+.deleteBTN {
+  background-color: red;
+}
+.favBTN {
+  background-color: blue;
+}
+.editBtn {
+  background-color: green;
+  padding: 6px;
+}
+/* .line */
