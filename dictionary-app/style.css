@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+}
+.card {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  gap: 20px;
+  border-radius: 10px;
+  height: max-content;
+}
+.input {
+  padding: 4px;
+  width: 240px;
+}
+input::placeholder {
+  font-weight: bold;
+}
+.audioDiv {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+  gap: 10px;
+}
+.audioDiv div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
