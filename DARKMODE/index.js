@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
     body.classList.add("dark-mode");
   }
 });
+
 modeButton.addEventListener("click", function () {
   body.classList.toggle("dark-mode");
   if (localStorage.getItem("dark") == "true") {
